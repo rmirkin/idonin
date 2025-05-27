@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>!!~*מזל טוב עידו*~!!</title>
+    <style>
+        body {
+            background-color: black;
+            color: lime;
+            font-family: 'Comic Sans MS', cursive;
+            text-align: center;
+            background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+        }
+
+        h1 {
+            font-size: 4em;
+            text-shadow: 0 0 10px fuchsia, 0 0 20px yellow;
+            color: hotpink;
+            margin-top: 20px;
+        }
+
+        .sparkle-text {
+            animation: glitter 1s infinite;
+        }
+
+        @keyframes glitter {
+            0% { color: yellow; }
+            50% { color: cyan; }
+            100% { color: lime; }
+        }
+
+        .banner {
+            margin: 20px auto;
+        }
+
+        .gallery img {
+            border: 5px dashed magenta;
+            margin: 10px;
+            width: 150px;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: rotate(5deg) scale(1.1);
+        }
+
+        .flying-objects {
+            position: absolute;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            animation: flyAcross 10s linear infinite;
+        }
+
+        @keyframes flyAcross {
+            0% { transform: translateX(-100px) translateY(0); }
+            100% { transform: translateX(150vw) translateY(-50vh); }
+        }
+
+        .button {
+            font-size: 1.5em;
+            background-color: gold;
+            padding: 15px;
+            border: 5px dotted red;
+            margin: 30px;
+            cursor: pointer;
+            animation: blink 1s step-start infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0.5; }
+        }
+
+        .br-mano-msg {
+            font-size: 1.3em;
+            margin: 20px;
+            display: none;
+            color: white;
+            background-color: purple;
+            padding: 15px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img class="banner" src="https://www.gifss.com/gif/others/gifss-banner-3.gif" alt="banner">
+    <h1 class="sparkle-text">!!! מזל טוב עידו !!!</h1>
+    <marquee scrollamount="10" direction="left"><img src="https://www.animatedimages.org/data/media/169/animated-space-image-0080.gif" height="40"> ברכות מהחלל! <img src="https://www.animatedimages.org/data/media/169/animated-space-image-0083.gif" height="40"></marquee>
+
+    <button class="button" onclick="document.getElementById('bar-msg').style.display='block'">ברכה מבר מנור</button>
+    <div class="br-mano-msg" id="bar-msg">
+        עידו היקר!<br>אין כמוך בעולם! שתהיה לך שנה נפלאה, מלאה בבירות קרות, חיבוקים חמים, והרבה רגעים קסומים.<br>באהבה ענקית - בר מנור 🚀
+    </div>
+
+    <div class="gallery">
+        <img src="IMG_0406.jpeg">
+        <img src="IMG_0455 (1).jpeg">
+        <img src="IMG_0839.jpeg">
+        <img src="IMG_1109.jpeg">
+        <img src="A781465-R1-23-24A.jpeg">
+        <img src="A781465-R1-34-35A.jpeg">
+        <img src="IMG_1355.jpeg">
+        <img src="IMG_1360.jpeg">
+        <img src="IMG_3664.jpeg">
+        <img src="IMG_3706.jpeg">
+        <img src="IMG_4142.jpeg">
+        <img src="IMG_4748.jpeg">
+        <img src="IMG_4766.jpeg">
+        <img src="IMG_7723.jpeg">
+    </div>
+
+    <img class="flying-objects" src="https://www.animatedimages.org/data/media/169/animated-space-image-0099.gif" width="100">
+    <img class="flying-objects" style="top: 30vh;" src="https://www.animatedimages.org/data/media/169/animated-space-image-0049.gif" width="80">
+</body>
+</html>
